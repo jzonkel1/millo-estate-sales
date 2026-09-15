@@ -273,6 +273,13 @@ body.menu-open{overflow:hidden}
 .rev .rev__cta{margin-top:30px;display:inline-flex;gap:14px;flex-wrap:wrap;justify-content:center}
 
 /* ---------- markets ---------- */
+.nav__panel a.nav__more,.mnav__list a.mnav__more{font-family:var(--f-sans);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze);white-space:normal;margin-top:6px;line-height:1.35}
+.nav__panel a.nav__more::before,.mnav__list a.mnav__more::before{background:transparent;border:1px solid var(--bronze)}
+.mk__more{margin-top:16px}.mk__more .btn{padding:11px 16px;font-size:.66rem;letter-spacing:.16em;white-space:normal;text-align:center;line-height:1.4}
+.mk__soc{display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-family:var(--f-sans);font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze)}
+.mk__soc span{margin-right:auto}.mk__soc a{width:36px;height:36px;border:1px solid var(--line);display:grid;place-items:center;color:var(--umber);background:var(--plaster)}.mk__soc .ic{width:16px;height:16px}
+.soc{margin-top:18px;flex-direction:column;align-items:flex-start;gap:0}.soc__row{display:flex;align-items:center;gap:8px;margin-top:8px;font-family:var(--f-sans);font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze)}
+.soc__row span{min-width:150px}.ftr .soc__row a{display:grid;place-items:center;width:32px;height:32px;padding:0;border:1px solid var(--line);color:var(--umber);background:var(--ivory)}.soc__row .ic{width:15px;height:15px}
 .markets{display:grid;grid-template-columns:1fr 1fr;gap:28px}
 .mk{border:1px solid var(--line);background:var(--ivory);display:flex;flex-direction:column}
 .mk__map{aspect-ratio:16/9;background:var(--plaster-2);filter:sepia(.35) saturate(.7);border-bottom:1px solid var(--line)}
@@ -430,22 +437,19 @@ body.menu-open{overflow:hidden}
     <nav class="nav" aria-label="Primary">
       <div class="nav__dd">
         <a href="#services">Services <svg class="ic" viewBox="0 0 24 24"><use href="#i-down"/></svg></a>
-        <div class="nav__menu"><div class="nav__panel"><small>6 service pages</small>
-          <a href="#services">Estate Sales</a><a href="#services">Estate Liquidation</a><a href="#services">Buy-Outs</a><a href="#services">Downsizing &amp; Moving Sales</a><a href="#services">Post-Sale Clean-Out</a><a href="#consult">Free Consultation</a>
+        <div class="nav__menu"><div class="nav__panel"><small>3 service pages</small>
+          <a href="#services">Estate Sales</a><a href="#services">Estate Liquidation</a><a href="#consult">Free Consultation</a>
         </div></div>
       </div>
       <div class="nav__dd">
         <a href="#areas">Service Areas <svg class="ic" viewBox="0 0 24 24"><use href="#i-down"/></svg></a>
         <div class="nav__menu"><div class="nav__panel nav__panel--2"><div class="nav__cols">
-          <small>Corpus Christi &amp; the Coastal Bend</small><small>Dallas – Fort Worth</small>
+          <small>Corpus Christi &amp; South Texas</small><small>Dallas – Fort Worth</small>
           <a href="#areas">Corpus Christi</a><a href="#areas">Dallas</a>
           <a href="#areas">Portland</a><a href="#areas">Fort Worth</a>
           <a href="#areas">Rockport</a><a href="#areas">Arlington</a>
-          <a href="#areas">Aransas Pass</a><a href="#areas">Grand Prairie</a>
-          <a href="#areas">Ingleside</a><a href="#areas">Irving</a>
-          <a href="#areas">Port Aransas</a><a href="#areas">Mansfield</a>
           <a href="#areas">Kingsville</a><a href="#areas">Plano</a>
-          <a href="#areas">Alice</a><a href="#areas">Southlake</a>
+          <a class="nav__more" href="#consult">Another town in South Texas? Tell us where</a><a class="nav__more" href="#consult">Serving the entire DFW Metroplex</a>
         </div></div></div>
       </div>
       <a href="#process">How It Works</a>
@@ -463,16 +467,16 @@ body.menu-open{overflow:hidden}
     <button class="mnav__close" id="mnavClose" type="button" aria-label="Close menu">&times;</button>
   </div>
   <details>
-    <summary><span>Services<em>6 pages</em></span><svg class="ic" viewBox="0 0 24 24"><use href="#i-down"/></svg></summary>
-    <div class="mnav__list"><a href="#services">Estate Sales</a><a href="#services">Estate Liquidation</a><a href="#services">Buy-Outs</a><a href="#services">Downsizing &amp; Moving Sales</a><a href="#services">Post-Sale Clean-Out</a><a href="#consult">Free Consultation</a></div>
+    <summary><span>Services<em>3 pages</em></span><svg class="ic" viewBox="0 0 24 24"><use href="#i-down"/></svg></summary>
+    <div class="mnav__list"><a href="#services">Estate Sales</a><a href="#services">Estate Liquidation</a><a href="#consult">Free Consultation</a></div>
   </details>
   <details>
-    <summary><span>Service Areas<em>16 towns</em></span><svg class="ic" viewBox="0 0 24 24"><use href="#i-down"/></svg></summary>
+    <summary><span>Service Areas<em>Two markets</em></span><svg class="ic" viewBox="0 0 24 24"><use href="#i-down"/></svg></summary>
     <div class="mnav__list">
-      <small>Corpus Christi &amp; the Coastal Bend</small>
-      <a href="#areas">Corpus Christi</a><a href="#areas">Portland</a><a href="#areas">Rockport</a><a href="#areas">Aransas Pass</a><a href="#areas">Ingleside</a><a href="#areas">Port Aransas</a><a href="#areas">Kingsville</a><a href="#areas">Alice</a>
+      <small>Corpus Christi &amp; South Texas</small>
+      <a href="#areas">Corpus Christi</a><a href="#areas">Portland</a><a href="#areas">Rockport</a><a href="#areas">Kingsville</a><a class="mnav__more" href="#consult">Another town in South Texas? Tell us where</a>
       <small>Dallas – Fort Worth</small>
-      <a href="#areas">Dallas</a><a href="#areas">Fort Worth</a><a href="#areas">Arlington</a><a href="#areas">Grand Prairie</a><a href="#areas">Irving</a><a href="#areas">Mansfield</a><a href="#areas">Plano</a><a href="#areas">Southlake</a>
+      <a href="#areas">Dallas</a><a href="#areas">Fort Worth</a><a href="#areas">Arlington</a><a href="#areas">Plano</a><a class="mnav__more" href="#consult">Serving the entire DFW Metroplex</a>
     </div>
   </details>
   <a href="#process">How It Works</a>
@@ -531,14 +535,11 @@ body.menu-open{overflow:hidden}
     <div class="sec-h c rv">
       <p class="eyebrow c">What we do</p>
       <h2>Full-service, <em>start to finish.</em></h2>
-      <p>One team handles the entire process. You get a free consultation up front, a clear plan, and a check at the end.</p>
+      <p>Three ways to work with us. Each one starts with a free consultation and a clear plan, and ends with a check.</p>
     </div>
     <div class="grid3">
       <a class="svc rv" href="#services"><div class="svc__art"><img src="img/web/fb-house.jpg" alt="" loading="lazy"></div><div class="svc__b"><h3>Estate Sales</h3><p>The whole home, staged and priced like a boutique and opened to the public over a two- or three-day sale.</p><span class="more">Learn more <svg class="ic" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span></div></a>
       <a class="svc rv" href="#services"><div class="svc__art"><img src="img/web/fb-wallunit.jpg" alt="" loading="lazy"></div><div class="svc__b"><h3>Estate Liquidation</h3><p>When the timeline is tight or a public sale isn't the right fit, we liquidate the contents efficiently and respectfully.</p><span class="more">Learn more <svg class="ic" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span></div></a>
-      <a class="svc rv" href="#services"><div class="svc__art"><img src="img/web/fb-horses.jpg" alt="" loading="lazy"></div><div class="svc__b"><h3>Buy-Outs</h3><p>A fair, straightforward offer for the contents of a home when you need it done in days, not weeks.</p><span class="more">Learn more <svg class="ic" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span></div></a>
-      <a class="svc rv" href="#services"><div class="svc__art"><img src="img/web/fb-racks.jpg" alt="" loading="lazy"></div><div class="svc__b"><h3>Downsizing &amp; Moving Sales</h3><p>Keep what's coming with you. We sell the rest, right from the house, before the movers arrive.</p><span class="more">Learn more <svg class="ic" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span></div></a>
-      <a class="svc rv" href="#services"><div class="svc__art"><img src="img/web/fb-sunroom.jpg" alt="" loading="lazy"></div><div class="svc__b"><h3>Post-Sale Clean-Out</h3><p>Whatever doesn't sell is donated or hauled, and the house is left broom-clean and ready to list.</p><span class="more">Learn more <svg class="ic" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span></div></a>
       <a class="svc rv" href="#consult" data-book><div class="svc__art"><img src="img/web/table-marble.jpg" alt="" loading="lazy"></div><div class="svc__b"><h3>Free Consultation</h3><p>We walk the home with you, explain how a sale would go, and answer every question. No pressure and no obligation.</p><span class="more">Book yours <svg class="ic" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span></div></a>
     </div>
   </div>
@@ -636,25 +637,29 @@ body.menu-open{overflow:hidden}
     <div class="sec-h rv">
       <p class="eyebrow">Where we work</p>
       <h2>Two markets, <em>one family.</em></h2>
-      <p>Tony runs Corpus Christi and the Coastal Bend. His father runs Dallas–Fort Worth, where the family has been running sales for years. Same standards, same crew culture, either end of Texas.</p>
+      <p>Tony runs Corpus Christi and South Texas. His father runs Dallas–Fort Worth, where the family has been running sales for years. Same standards, same crew culture, either end of Texas. Not sure if we come to you? Ask. We usually do.</p>
     </div>
     <div class="markets">
       <div class="mk rv">
         <div class="mk__map"><iframe title="Map of Corpus Christi, Texas" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Corpus+Christi,+TX&z=9&output=embed"></iframe></div>
         <div class="mk__b">
           <h3><span>Coastal Bend</span>Corpus Christi</h3>
-          <p>Serving Corpus Christi and the surrounding Coastal Bend communities.</p>
-          <div class="towns"><a href="#areas">Corpus Christi</a><a href="#areas">Portland</a><a href="#areas">Rockport</a><a href="#areas">Aransas Pass</a><a href="#areas">Ingleside</a><a href="#areas">Port Aransas</a><a href="#areas">Kingsville</a><a href="#areas">Alice</a></div>
+          <p>Based in Corpus Christi, working across the Coastal Bend and South Texas.</p>
+          <div class="towns"><a href="#areas">Corpus Christi</a><a href="#areas">Portland</a><a href="#areas">Rockport</a><a href="#areas">Port Aransas</a><a href="#areas">Kingsville</a></div>
+          <div class="mk__more"><a class="btn btn--ghost" href="#consult">Another town in South Texas? Tell us where</a></div>
           <a class="tel" href="tel:+13614455269"><svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(361) 445-5269</a>
+          <div class="mk__soc"><span>Follow Corpus Christi</span><a href="https://www.facebook.com/milloestatesalestx" target="_blank" rel="noopener" aria-label="Millo Estate Sales Corpus Christi on Facebook"><svg class="ic" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a><a href="https://instagram.com/milloestatesalescc" target="_blank" rel="noopener" aria-label="Millo Estate Sales Corpus Christi on Instagram"><svg class="ic" viewBox="0 0 24 24"><use href="#i-ig"/></svg></a></div>
         </div>
       </div>
       <div class="mk rv">
         <div class="mk__map"><iframe title="Map of Dallas–Fort Worth, Texas" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=32.8998,-97.0403&z=8&output=embed"></iframe></div>
         <div class="mk__b">
           <h3><span>North Texas</span>Dallas – Fort Worth</h3>
-          <p>Serving the Metroplex and surrounding cities.</p>
-          <div class="towns"><a href="#areas">Dallas</a><a href="#areas">Fort Worth</a><a href="#areas">Arlington</a><a href="#areas">Grand Prairie</a><a href="#areas">Irving</a><a href="#areas">Mansfield</a><a href="#areas">Plano</a><a href="#areas">Southlake</a></div>
+          <p>Dallas, Fort Worth and everywhere in between.</p>
+          <div class="towns"><a href="#areas">Dallas</a><a href="#areas">Fort Worth</a><a href="#areas">Arlington</a><a href="#areas">Plano</a></div>
+          <div class="mk__more"><a class="btn btn--ghost" href="#consult">Serving the entire DFW Metroplex</a></div>
           <a class="tel" href="tel:+18175381489"><svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(817) 538-1489</a>
+          <div class="mk__soc"><span>Follow DFW</span><a href="#areas" aria-label="Millo Estate Sales DFW on Facebook"><svg class="ic" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a><a href="#areas" aria-label="Millo Estate Sales DFW on Instagram"><svg class="ic" viewBox="0 0 24 24"><use href="#i-ig"/></svg></a></div>
         </div>
       </div>
     </div>
@@ -693,9 +698,7 @@ body.menu-open{overflow:hidden}
         <p class="sub">Pick the closest one. We'll sort out the details together.</p>
         <div class="opts" data-field="need">
           <button type="button" class="opt"><svg class="ic" viewBox="0 0 24 24"><use href="#i-house"/></svg>An estate sale</button>
-          <button type="button" class="opt"><svg class="ic" viewBox="0 0 24 24"><use href="#i-box"/></svg>Downsizing or moving</button>
-          <button type="button" class="opt"><svg class="ic" viewBox="0 0 24 24"><use href="#i-bank"/></svg>A buy-out offer</button>
-          <button type="button" class="opt"><svg class="ic" viewBox="0 0 24 24"><use href="#i-truck"/></svg>A clean-out</button>
+          <button type="button" class="opt"><svg class="ic" viewBox="0 0 24 24"><use href="#i-box"/></svg>Estate liquidation</button>
           <button type="button" class="opt"><svg class="ic" viewBox="0 0 24 24"><use href="#i-spark"/></svg>Not sure yet</button>
         </div>
       </div>
@@ -745,14 +748,13 @@ body.menu-open{overflow:hidden}
     <div class="ftr__g">
       <div>
         <span class="mark"><img src="img/web/logo.png" alt="Millo Estate Sales" width="1142" height="563"><small>DFW &nbsp;|&nbsp; Corpus Christi</small></span>
-        <p>Family-owned estate sale and liquidation services in Corpus Christi, the Coastal Bend and Dallas–Fort Worth. Bilingual. Insured. Free consultations.</p>
+        <p>Family-owned estate sales and liquidation in Corpus Christi, South Texas and Dallas–Fort Worth. Bilingual. Insured. Free consultations.</p>
         <div class="soc">
-          <a href="https://www.facebook.com/milloestatesalestx" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ic" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
-          <a href="https://instagram.com/milloestatesalescc" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic" viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
-          <a href="https://tiktok.com/@milloestatesalescc" target="_blank" rel="noopener" aria-label="TikTok"><svg class="ic" viewBox="0 0 24 24"><path d="M16 3v2.6a4.6 4.6 0 0 0 4 4.5v3a7.6 7.6 0 0 1-4-1.3v5.5a5.3 5.3 0 1 1-5.3-5.3h.8v3.1a2.3 2.3 0 1 0 1.5 2.2V3z"/></svg></a>
+          <div class="soc__row"><span>Corpus Christi</span><a href="https://www.facebook.com/milloestatesalestx" target="_blank" rel="noopener" aria-label="Corpus Christi Facebook"><svg class="ic" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a><a href="https://instagram.com/milloestatesalescc" target="_blank" rel="noopener" aria-label="Corpus Christi Instagram"><svg class="ic" viewBox="0 0 24 24"><use href="#i-ig"/></svg></a><a href="https://tiktok.com/@milloestatesalescc" target="_blank" rel="noopener" aria-label="Corpus Christi TikTok"><svg class="ic" viewBox="0 0 24 24"><path d="M16 3v2.6a4.6 4.6 0 0 0 4 4.5v3a7.6 7.6 0 0 1-4-1.3v5.5a5.3 5.3 0 1 1-5.3-5.3h.8v3.1a2.3 2.3 0 1 0 1.5 2.2V3z"/></svg></a></div>
+          <div class="soc__row"><span>Dallas – Fort Worth</span><a href="#areas" aria-label="DFW Facebook"><svg class="ic" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a><a href="#areas" aria-label="DFW Instagram"><svg class="ic" viewBox="0 0 24 24"><use href="#i-ig"/></svg></a></div>
         </div>
       </div>
-      <div><h4>Services</h4><a href="#services">Estate Sales</a><a href="#services">Estate Liquidation</a><a href="#services">Buy-Outs</a><a href="#services">Downsizing &amp; Moving Sales</a><a href="#services">Post-Sale Clean-Out</a><a href="#consult">Free Consultation</a></div>
+      <div><h4>Services</h4><a href="#services">Estate Sales</a><a href="#services">Estate Liquidation</a><a href="#consult">Free Consultation</a></div>
       <div><h4>Shoppers</h4><a href="#sales">Upcoming Sales</a><a href="#sales">Join the Sale List</a><a href="https://www.estatesales.net/" target="_blank" rel="noopener">Find us on EstateSales.net</a><a href="https://www.facebook.com/milloestatesalestx" target="_blank" rel="noopener">Facebook</a></div>
       <div><h4>Contact</h4><a href="tel:+13614455269">(361) 445-5269 · Corpus Christi</a><a href="tel:+18175381489">(817) 538-1489 · DFW</a><a href="mailto:milloestatesalescc@gmail.com">milloestatesalescc@gmail.com</a><a href="#consult" data-book>Book a free consultation</a></div>
     </div>
